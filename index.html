@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Banking Website</title>
+
+</head>
+
+<body>
+	<header>
+		<h1>Banking Website</h1>
+		<nav>
+			<ul>
+
+				<p class="welcome"> Please sign in to access your account.</p>
+
+				<span class="date"></span>
+				<li>
+					<form><input class="login__label" type="text" placeholder="Username" required>
+				</li>
+				<li><input class="password__label" type="password" placeholder="password" required></form>
+				</li>
+
+				<li><button class="login">Login</button></li>
+				<li><a href="aboutus.html" target="_self">AboutUs</a></li>
+				<li><a href="contactus.html" target="_self">ContactUs</a></li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<main class="app">
+		<!-- BALANCE -->
+		<div class="balance">
+			<div>
+				<p class="balance__label">Current balance</p>
+				<p class="balance__date">
+					<!-- As of <span class="date">05/03/2037</span> -->
+				</p>
+			</div>
+			<p class="balance__value">Rs 0000</p>
+
+		</div>
+
+		<!-- MOVEMENTS -->
+		<h2 class="tt"></h2>
+		<div class="movement">
+
+			<div class="movement__row">
+				<div class="movement__type movement__type--deposit">2 deposit</div>
+				<div class="movement__date">3 days ago</div>
+				<div class="movement__value">Rs 4000</div>
+			</div>
+			<div class="movement__row">
+				<div class="movemens__type movement__type--withdrawal">
+					1 withdrawal
+				</div>
+				<div class="movement__date">24/01/2037</div>
+				<div class="movement__value">-Rs 378</div>
+			</div>
+		</div>
+
+		<!--  TRANSFER Money to another account -->
+		<div class="operation operation--transfer">
+			<h2>Transfer money</h2>
+			<form class="form form--transfer">
+				<input type="text" class="form__input form__input--to" placeholder="Transfer to" />
+				<input type="number" class="form__input form__input--amount" placeholder="Amount" />
+				<button class="form__btn form__btn--transfer">Transfer</button>
+
+			</form>
+		</div>
+
+
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Banking Website. All rights reserved.</p>
+	</footer>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone.min.js"></script>
+	<script src="./account_details.js"></script>
+</body>
+
+</html>
